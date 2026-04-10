@@ -1,5 +1,7 @@
 const darkBtn = document.getElementById("darkModeBtn");
+const body = document.body;
 
 darkBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+    body.classList.toggle("dark-mode");
+    darkBtn.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
 });

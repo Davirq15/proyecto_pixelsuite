@@ -1,306 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramientas de Diseño Gráfico</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">PixelSuite</div>
+            <a href="#inicio" class="logo">PixelSuite</a>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#programas">Programas</a></li>
-                <li><a href="#">Comparaciones</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#comparaciones">Comparaciones</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <button id="darkModeBtn">🌙</button>
+            <button id="darkModeBtn" aria-label="Activar modo oscuro">🌙</button>
         </nav>
     </header>
-    <br><br>
-    <section id="inicio" class="inicio">
-        <div class="contenido-inicio">
-            <br><br>
-            <h1>Bienvenido a <span>PixelSuite</span></h1>
-            <br>
-            <p>Descubre las mejores herramientas para diseñar,</p>
-            <p>comparar programas y aprender a elegir la indicada según tu proyecto.</p>
-            <p>Todo en un solo lugar.</p>
-            <br><br><br>
-        </div>
-    </section>
-    <section class="herramientas">
 
-        <h2>Herramientas Populares</h2>
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="contenido-inicio">
+                <p class="tagline">Guía visual para estudiantes, creadores y principiantes</p>
+                <h1>Aprende a elegir la herramienta ideal para cada tipo de diseño</h1>
+                <p>
+                    Explora programas, compara funciones, descubre ideas de proyectos y entiende
+                    qué software te conviene según lo que quieres crear.
+                </p>
 
-        <div class="cards">
+                <div class="hero-actions">
+                    <a href="#programas" class="btn btn-primary">Explorar programas</a>
+                    <a href="#proyectos" class="btn btn-secondary">Ver ideas de proyectos</a>
+                </div>
 
-            <div class="card">
-                <h3>Photoshop</h3>
-                <p>Editor profesional para manipulación de imágenes y diseño gráfico avanzado.</p>
-                <button>Ver más</button>
+                <div class="hero-stats">
+                    <article>
+                        <strong>7</strong>
+                        <span>Programas explicados</span>
+                    </article>
+                    <article>
+                        <strong>4</strong>
+                        <span>Perfiles de uso</span>
+                    </article>
+                    <article>
+                        <strong>12+</strong>
+                        <span>Ideas para practicar</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="herramientas">
+            <h2>Herramientas Populares</h2>
+            <p class="section-intro">
+                Estas son tres de las opciones más buscadas por quienes empiezan en diseño, ilustración y experiencia digital.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <span class="card-label">Edición fotográfica</span>
+                    <h3>Photoshop</h3>
+                    <p>Editor profesional para manipulación de imágenes, retoque, composiciones visuales y piezas publicitarias.</p>
+                    <a href="#photoshop" class="card-link">Ver más</a>
+                </div>
+
+                <div class="card">
+                    <span class="card-label">Diseño vectorial</span>
+                    <h3>Illustrator</h3>
+                    <p>Software enfocado en gráficos escalables, perfecto para logotipos, branding, iconos e ilustraciones.</p>
+                    <a href="#illustrator" class="card-link">Ver más</a>
+                </div>
+
+                <div class="card">
+                    <span class="card-label">UI / UX</span>
+                    <h3>Figma</h3>
+                    <p>Plataforma colaborativa para diseñar interfaces, crear prototipos y trabajar en equipo desde el navegador.</p>
+                    <a href="#comparaciones" class="card-link">Comparar opciones</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparaciones" class="comparaciones">
+            <h2>Comparación rápida</h2>
+            <p class="section-intro">
+                Si todavía no sabes cuál programa estudiar primero, esta tabla te ayuda a tomar una decisión más rápida.
+            </p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Programa</th>
+                            <th>Enfoque principal</th>
+                            <th>Nivel recomendado</th>
+                            <th>Ideal para</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Photoshop</td>
+                            <td>Edición de imagen</td>
+                            <td>Intermedio</td>
+                            <td>Fotografía, publicidad, redes sociales</td>
+                        </tr>
+                        <tr>
+                            <td>Illustrator</td>
+                            <td>Vectorial</td>
+                            <td>Intermedio</td>
+                            <td>Logos, branding, ilustración</td>
+                        </tr>
+                        <tr>
+                            <td>Premiere Pro</td>
+                            <td>Edición de video</td>
+                            <td>Intermedio</td>
+                            <td>Contenido audiovisual y YouTube</td>
+                        </tr>
+                        <tr>
+                            <td>After Effects</td>
+                            <td>Animación y motion</td>
+                            <td>Avanzado</td>
+                            <td>Intros, efectos, motion graphics</td>
+                        </tr>
+                        <tr>
+                            <td>Lightroom</td>
+                            <td>Flujo fotográfico</td>
+                            <td>Principiante</td>
+                            <td>Catálogos, corrección rápida y color</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div class="card">
-                <h3>Illustrator</h3>
-                <p>Software especializado en gráficos vectoriales para logos e ilustraciones.</p>
-                <button>Ver más</button>
+            <div class="comparison-grid">
+                <article class="comparison-box">
+                    <h3>Si te gusta crear marcas</h3>
+                    <p>Empieza con Illustrator para dominar formas, color, tipografía y escalado sin pérdida de calidad.</p>
+                </article>
+                <article class="comparison-box">
+                    <h3>Si te interesa la fotografía</h3>
+                    <p>La combinación de Lightroom y Photoshop cubre desde ajustes rápidos hasta retoques detallados.</p>
+                </article>
+                <article class="comparison-box">
+                    <h3>Si quieres contenido para redes</h3>
+                    <p>Premiere Pro, Photoshop y Figma te ayudan a producir piezas visuales, video corto y prototipos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="programas" class="detalles-programas">
+            <h2>Programas de Adobe</h2>
+
+            <div class="programa" id="photoshop">
+                <h3>Adobe Photoshop</h3>
+                <h4>Qué es</h4>
+                <p>Adobe Photoshop es un programa profesional de edición y manipulación de imágenes. Es uno de los softwares más utilizados en diseño gráfico, fotografía y arte digital.</p>
+                <h4>Para qué sirve</h4>
+                <p>Se utiliza principalmente para editar fotografías, crear composiciones visuales y hacer retoques avanzados en imágenes.</p>
+                <h4>Qué proyectos se pueden realizar</h4>
+                <ul>
+                    <li>Edición y retoque fotográfico</li>
+                    <li>Diseño de posters</li>
+                    <li>Banners para redes sociales</li>
+                    <li>Arte digital</li>
+                    <li>Fotomontajes</li>
+                </ul>
             </div>
 
-            <div class="card">
-                <h3>Figma</h3>
-                <p>Herramienta moderna para diseño UI/UX y trabajo colaborativo en la nube.</p>
-                <button>Ver más</button>
+            <div class="programa" id="illustrator">
+                <h3>Adobe Illustrator</h3>
+                <h4>Qué es</h4>
+                <p>Adobe Illustrator es un software especializado en gráficos vectoriales utilizado para crear ilustraciones, logotipos y diseños escalables.</p>
+                <h4>Para qué sirve</h4>
+                <p>Se usa principalmente para crear diseños vectoriales que pueden ampliarse sin perder calidad.</p>
+                <h4>Qué proyectos se pueden realizar</h4>
+                <ul>
+                    <li>Logotipos</li>
+                    <li>Ilustraciones digitales</li>
+                    <li>Iconos</li>
+                    <li>Diseño de marcas</li>
+                    <li>Material publicitario</li>
+                </ul>
             </div>
 
-        </div>
+            <div class="programa">
+                <h3>Adobe Premiere Pro</h3>
+                <h4>Qué es</h4>
+                <p>Adobe Premiere Pro es un software profesional de edición de video usado en cine, televisión y creación de contenido digital.</p>
+                <h4>Para qué sirve</h4>
+                <p>Se utiliza para editar videos, organizar clips, agregar efectos y producir contenido audiovisual de alta calidad.</p>
+                <h4>Qué proyectos se pueden realizar</h4>
+                <ul>
+                    <li>Videos para YouTube</li>
+                    <li>Producción cinematográfica</li>
+                    <li>Videos publicitarios</li>
+                    <li>Contenido para redes sociales</li>
+                    <li>Documentales</li>
+                </ul>
+            </div>
 
-    </section>
+            <div class="programa">
+                <h3>Adobe After Effects</h3>
+                <h4>Qué es</h4>
+                <p>Adobe After Effects es un programa especializado en animación digital y efectos visuales para video.</p>
+                <h4>Para qué sirve</h4>
+                <p>Se utiliza para crear animaciones, efectos especiales y gráficos en movimiento para proyectos audiovisuales.</p>
+                <h4>Qué proyectos se pueden realizar</h4>
+                <ul>
+                    <li>Animaciones para videos</li>
+                    <li>Efectos especiales</li>
+                    <li>Motion graphics</li>
+                    <li>Intro y outro para videos</li>
+                    <li>Animaciones de texto</li>
+                </ul>
+            </div>
 
-    <section id="programas" class="detalles-programas">
+            <div class="programa">
+                <h3>Adobe Lightroom</h3>
+                <h4>Qué es</h4>
+                <p>Adobe Lightroom es un software de edición y organización de fotografías enfocado en fotógrafos.</p>
+                <h4>Para qué sirve</h4>
+                <p>Permite editar, organizar y mejorar fotografías digitales de forma rápida y eficiente.</p>
+                <h4>Qué proyectos se pueden realizar</h4>
+                <ul>
+                    <li>Edición de fotografía profesional</li>
+                    <li>Ajuste de color y exposición</li>
+                    <li>Organización de colecciones de fotos</li>
+                    <li>Fotografía de eventos</li>
+                    <li>Fotografía de paisajes</li>
+                </ul>
+            </div>
 
-        <h2>Programas de Adobe</h2>
-<br>
-        <div class="programa">
+            <div class="programa">
+                <h3>Adobe InDesign</h3>
+                <h4>Qué es</h4>
+                <p>Adobe InDesign es un software de diseño editorial utilizado para crear publicaciones impresas y digitales.</p>
+                <h4>Para qué sirve</h4>
+                <p>Se utiliza para diseñar documentos con múltiples páginas y organizar texto e imágenes de manera profesional.</p>
+                <h4>Qué proyectos se pueden realizar</h4>
+                <ul>
+                    <li>Revistas</li>
+                    <li>Libros</li>
+                    <li>Folletos</li>
+                    <li>Catálogos</li>
+                    <li>Periódicos</li>
+                </ul>
+            </div>
 
-            <h3>Adobe Photoshop</h3>
+            <div class="programa">
+                <h3>Adobe Audition</h3>
+                <h4>Qué es</h4>
+                <p>Adobe Audition es un software profesional de edición y producción de audio.</p>
+                <h4>Para qué sirve</h4>
+                <p>Se utiliza para grabar, editar, mezclar y mejorar archivos de audio.</p>
+                <h4>Qué proyectos se pueden realizar</h4>
+                <ul>
+                    <li>Edición de podcasts</li>
+                    <li>Producción musical</li>
+                    <li>Edición de audio para videos</li>
+                    <li>Restauración de audio</li>
+                    <li>Producción de contenido multimedia</li>
+                </ul>
+            </div>
+        </section>
 
-            <h4>¿Qué es?</h4>
-            <p>
-            Adobe Photoshop es un programa profesional de edición y manipulación de imágenes. 
-            Es uno de los softwares más utilizados en el mundo del diseño gráfico, fotografía y arte digital.
+        <section id="proyectos" class="proyectos">
+            <h2>Ideas de proyectos para practicar</h2>
+            <p class="section-intro">
+                Una buena forma de aprender diseño es construir piezas pequeñas con objetivos claros.
             </p>
 
-            <h4>¿Para qué sirve?</h4>
-            <p>
-            Se utiliza principalmente para editar fotografías, crear composiciones visuales y realizar 
-            retoques avanzados en imágenes.
-            </p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Branding para una cafetería</h3>
+                    <p>Crea logo, paleta de color, menú, publicaciones para Instagram y un empaque sencillo.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Portada de álbum</h3>
+                    <p>Diseña una portada musical con fotomontaje, tipografía y una identidad visual consistente.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Mini interfaz de app</h3>
+                    <p>Diseña una pantalla de inicio, registro, perfil y navegación para practicar UI/UX.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Video promocional corto</h3>
+                    <p>Edita un reel de 20 segundos con texto animado, música, cortes y ritmo visual.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Revista de 4 páginas</h3>
+                    <p>Organiza texto, imágenes, retícula y jerarquía visual para practicar diseño editorial.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Paquete para redes sociales</h3>
+                    <p>Diseña posts, historias y banners para una marca ficticia con estilo coherente.</p>
+                </article>
+            </div>
+        </section>
 
-            <h4>¿Qué proyectos se pueden realizar?</h4>
-            <ul>
-                <li>Edición y retoque fotográfico</li>
-                <li>Diseño de posters</li>
-                <li>Banners para redes sociales</li>
-                <li>Arte digital</li>
-                <li>Fotomontajes</li>
-            </ul>
+        <section class="ruta-aprendizaje">
+            <h2>Ruta recomendada para empezar</h2>
+            <div class="steps">
+                <article class="step">
+                    <span>01</span>
+                    <h3>Aprende composición</h3>
+                    <p>Practica jerarquía visual, color, tipografía y balance antes de depender del software.</p>
+                </article>
+                <article class="step">
+                    <span>02</span>
+                    <h3>Elige un programa base</h3>
+                    <p>Empieza con uno según tu objetivo: Photoshop para imagen, Illustrator para branding o Figma para interfaces.</p>
+                </article>
+                <article class="step">
+                    <span>03</span>
+                    <h3>Haz proyectos pequeños</h3>
+                    <p>Es mejor terminar 5 ejercicios concretos que dejar 1 proyecto enorme a medias.</p>
+                </article>
+                <article class="step">
+                    <span>04</span>
+                    <h3>Construye portafolio</h3>
+                    <p>Documenta tu proceso, tus decisiones y el resultado final para mostrar evolución real.</p>
+                </article>
+            </div>
+        </section>
 
-            <h4>¿Qué lo diferencia de otros programas?</h4>
-            <ul>
-                <li>Tiene herramientas profesionales muy avanzadas</li>
-                <li>Es el estándar de la industria del diseño</li>
-                <li>Permite trabajar con capas y efectos complejos</li>
-                <li>Tiene una gran comunidad y muchos recursos</li>
-            </ul>
+        <section class="faq">
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-grid">
+                <article class="faq-item">
+                    <h3>Qué programa debería aprender primero</h3>
+                    <p>Depende de tu meta. Para edición de imagen, Photoshop. Para logos y marcas, Illustrator. Para interfaces, Figma.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Se necesita saber dibujar</h3>
+                    <p>No siempre. Muchas áreas del diseño trabajan más con estructura, tipografía, retícula y comunicación visual.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Cuál es mejor para principiantes</h3>
+                    <p>Lightroom y Figma suelen sentirse más accesibles al inicio, aunque todo mejora con práctica constante.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Cómo practico sin clientes</h3>
+                    <p>Inventando marcas, rediseñando piezas existentes y resolviendo briefs ficticios con objetivos concretos.</p>
+                </article>
+            </div>
+        </section>
 
-        </div>
-<br>
-        <div class="programa">
-
-            <h3>Adobe Illustrator</h3>
-
-            <h4>¿Qué es?</h4>
-            <p>
-            Adobe Illustrator es un software especializado en gráficos vectoriales utilizado 
-            para crear ilustraciones, logotipos y diseños escalables.
-            </p>
-
-            <h4>¿Para qué sirve?</h4>
-            <p>
-            Se usa principalmente para crear diseños vectoriales que pueden ampliarse sin 
-            perder calidad.
-            </p>
-
-            <h4>¿Qué proyectos se pueden realizar?</h4>
-            <ul>
-                <li>Logotipos</li>
-                <li>Ilustraciones digitales</li>
-                <li>Iconos</li>
-                <li>Diseño de marcas</li>
-                <li>Material publicitario</li>
-            </ul>
-
-            <h4>¿Qué lo diferencia de otros programas?</h4>
-            <ul>
-                <li>Trabaja con gráficos vectoriales</li>
-                <li>Los diseños no pierden calidad al escalar</li>
-                <li>Es muy usado para branding</li>
-            </ul>
-
-        </div>
- <br>
-        <div class="programa">
-
-            <h3>Adobe Premiere Pro</h3>
-
-            <h4>¿Qué es?</h4>
-            <p>
-            Adobe Premiere Pro es un software profesional de edición de video utilizado en cine, televisión y creación de contenido digital.
-            </p>
-
-            <h4>¿Para qué sirve?</h4>
-            <p>
-            Se utiliza para editar videos, organizar clips, agregar efectos y producir contenido audiovisual de alta calidad.
-            </p>
-
-            <h4>¿Qué proyectos se pueden realizar?</h4>
-            <ul>
-                <li>Videos para YouTube</li>
-                <li>Producción cinematográfica</li>
-                <li>Videos publicitarios</li>
-                <li>Contenido para redes sociales</li>
-                <li>Documentales</li>
-            </ul>
-
-            <h4>¿Qué lo diferencia de otros programas?</h4>
-            <ul>
-                <li>Herramientas profesionales de edición</li>
-                <li>Gran compatibilidad con otros programas de Adobe</li>
-                <li>Muy utilizado en la industria audiovisual</li>
-            </ul>
-
-        </div>
-<br>
-        <div class="programa">
-
-            <h3>Adobe After Effects</h3>
-
-            <h4>¿Qué es?</h4>
-            <p>
-            Adobe After Effects es un programa especializado en animación digital y efectos visuales para video.
-            </p>
-
-            <h4>¿Para qué sirve?</h4>
-            <p>
-            Se utiliza para crear animaciones, efectos especiales y gráficos en movimiento para proyectos audiovisuales.
-            </p>
-
-            <h4>¿Qué proyectos se pueden realizar?</h4>
-            <ul>
-                <li>Animaciones para videos</li>
-                <li>Efectos especiales</li>
-                <li>Motion graphics</li>
-                <li>Intro y outro para videos</li>
-                <li>Animaciones de texto</li>
-            </ul>
-
-            <h4>¿Qué lo diferencia de otros programas?</h4>
-            <ul>
-                <li>Gran potencia para efectos visuales</li>
-                <li>Integración con Premiere Pro</li>
-                <li>Muy utilizado en cine y televisión</li>
-            </ul>
-
-        </div>
-<br>
-        <div class="programa">
-
-            <h3>Adobe Lightroom</h3>
-
-            <h4>¿Qué es?</h4>
-            <p>
-            Adobe Lightroom es un software de edición y organización de fotografías enfocado en fotógrafos profesionales.
-            </p>
-
-            <h4>¿Para qué sirve?</h4>
-            <p>
-            Permite editar, organizar y mejorar fotografías digitales de forma rápida y eficiente.
-            </p>
-
-            <h4>¿Qué proyectos se pueden realizar?</h4>
-            <ul>
-                <li>Edición de fotografía profesional</li>
-                <li>Ajuste de color y exposición</li>
-                <li>Organización de colecciones de fotos</li>
-                <li>Fotografía de eventos</li>
-                <li>Fotografía de paisajes</li>
-            </ul>
-
-            <h4>¿Qué lo diferencia de otros programas?</h4>
-            <ul>
-                <li>Diseñado especialmente para fotógrafos</li>
-                <li>Permite editar muchas fotos rápidamente</li>
-                <li>Excelente control de color</li>
-            </ul>
-
-        </div>
-<br>
-        <div class="programa">
-
-            <h3>Adobe InDesign</h3>
-
-            <h4>¿Qué es?</h4>
-            <p>
-            Adobe InDesign es un software de diseño editorial utilizado para crear publicaciones impresas y digitales.
-            </p>
-
-            <h4>¿Para qué sirve?</h4>
-            <p>
-            Se utiliza para diseñar documentos con múltiples páginas y organizar texto e imágenes de manera profesional.
-            </p>
-
-            <h4>¿Qué proyectos se pueden realizar?</h4>
-            <ul>
-                <li>Revistas</li>
-                <li>Libros</li>
-                <li>Folletos</li>
-                <li>Catálogos</li>
-                <li>Periódicos</li>
-            </ul>
-
-            <h4>¿Qué lo diferencia de otros programas?</h4>
-            <ul>
-                <li>Especializado en diseño editorial</li>
-                <li>Excelente control de texto y tipografía</li>
-                <li>Muy usado en publicaciones profesionales</li>
-            </ul>
-
-        </div>
-<br>
-        <div class="programa">
-
-            <h3>Adobe Audition</h3>
-
-            <h4>¿Qué es?</h4>
-            <p>
-            Adobe Audition es un software profesional de edición y producción de audio.
-            </p>
-
-            <h4>¿Para qué sirve?</h4>
-            <p>
-            Se utiliza para grabar, editar, mezclar y mejorar archivos de audio.
-            </p>
-
-            <h4>¿Qué proyectos se pueden realizar?</h4>
-            <ul>
-                <li>Edición de podcasts</li>
-                <li>Producción musical</li>
-                <li>Edición de audio para videos</li>
-                <li>Restauración de audio</li>
-                <li>Producción de contenido multimedia</li>
-            </ul>
-
-            <h4>¿Qué lo diferencia de otros programas?</h4>
-            <ul>
-                <li>Herramientas profesionales de audio</li>
-                <li>Integración con Premiere Pro</li>
-                <li>Muy usado en producción audiovisual</li>
-            </ul>
-
-        </div>
-
-    </section>
+        <section id="contacto" class="contacto">
+            <div class="contacto-box">
+                <p class="tagline">Sigue explorando diseño</p>
+                <h2>Convierte esta guía en tu punto de partida</h2>
+                <p>
+                    PixelSuite está pensada para ayudarte a comparar herramientas, descubrir áreas creativas
+                    y practicar con proyectos que sí te hagan crecer.
+                </p>
+                <a href="mailto:contacto@pixelsuite.com" class="btn btn-primary">Escribir a contacto</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-
         <p>© 2026 PixelSuite - Todos los derechos reservados</p>
-
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
