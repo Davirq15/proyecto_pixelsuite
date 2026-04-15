@@ -8,6 +8,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 :root {
     --bg: #f5fff9;
     --surface: #ffffff;
@@ -174,6 +185,106 @@ main {
 .btn-primary {
     background: var(--accent);
     color: #ffffff;
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+.programas-grid,
+.hero-actions,
+.hero-stats,
+.cards,
+.comparison-grid,
+.projects-grid,
+.steps,
+.faq-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.programas-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.programa-card,
+.recommendation-card {
+    padding: 28px;
+    border-radius: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.programa-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.programa-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(29, 157, 113, 0.28);
+    box-shadow: 0 25px 45px rgba(16, 76, 58, 0.16);
+}
+
+.programa-card h3 {
+    color: var(--primary-dark);
+}
+
+.programa-card span {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.recommendador {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.choice-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.pick-option {
+    padding: 16px 18px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.pick-option:hover,
+.pick-option.active {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+.recommendation-card {
+    margin-top: 28px;
+    text-align: left;
+    background: radial-gradient(circle at top left, rgba(41, 172, 113, 0.16), transparent 40%),
+        var(--surface);
+}
+
+.recommendation-card h3 {
+    margin-bottom: 14px;
+}
+
+.recommendation-card p {
+    color: var(--muted);
 }
 
 .btn-secondary {
@@ -416,7 +527,8 @@ footer {
     .projects-grid,
     .steps,
     .faq-grid,
-    .hero-stats {
+    .hero-stats,
+    .programas-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -432,7 +544,12 @@ footer {
     .projects-grid,
     .steps,
     .faq-grid,
-    .hero-stats {
+    .hero-stats,
+    .programas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .choice-buttons {
         grid-template-columns: 1fr;
     }
 
