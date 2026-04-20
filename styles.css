@@ -43,7 +43,7 @@ html {
     --nav: rgba(7, 47, 35, 0.94);
     --primary: #49c894;
     --primary-dark: #2b9f73;
-    --accent: #8bb8ff;
+    --accent: #072249;
     --border: rgba(146, 220, 187, 0.12);
     --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
     --footer: #08110e;
@@ -301,13 +301,26 @@ main {
 .card,
 .comparison-box,
 .project-card,
-.step,
 .faq-item,
 .contacto-box,
 .programa {
     background: var(--surface);
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
+}
+
+.step {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+.step:hover {
+    transform: translateY(-6px);
+    border-color: rgba(29, 157, 113, 0.28);
+    box-shadow: 0 15px 35px rgba(16, 76, 58, 0.16);
 }
 
 .hero-stats article {
@@ -428,11 +441,22 @@ th {
 }
 
 .comparison-box,
-.project-card,
 .step,
 .faq-item {
     padding: 26px;
     border-radius: 22px;
+}
+
+.project-card {
+    padding: 26px;
+    border-radius: 22px;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(29, 157, 113, 0.28);
+    box-shadow: 0 15px 35px rgba(16, 76, 58, 0.16);
 }
 
 .detalles-programas {
