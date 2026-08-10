@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Reyes | Desarrollo web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/programacion.css">
+</head>
+
+<body>
+
+    <div class="noise"></div>
+
+    <nav class="topbar">
+        <a class="brand" href="index.html">DR<span>.</span></a>
+
+        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+            <a href="index.html">Portafolios</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <header class="hero">
+
+            <div class="hero-copy">
+
+
+                <h1>
+                    Diseño y construyo<br>
+                    <em>experiencias digitales</em>
+                </h1>
+
+                <p class="hero-text">
+                    Soy David Reyes, desarrollador web en formación. Convierto ideas y diseños en sitios modernos,
+                    claros y funcionales.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#proyectos">
+                        Ver proyectos <span>&darr;</span>
+                    </a>
+
+                    <a class="button button-link" href="#contacto">
+                        Hablemos <span>&nearr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="code-window">
+
+                <div class="window-bar">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <span>portfolio.js</span>
+                </div>
+
+                <!-- codigo animacion -->
+
+                <pre><code><b>const</b> developer = {
+  name: <strong>"David Reyes"</strong>,
+  role: <strong>"Frontend Developer"</strong>,
+  skills: [<strong>"HTML"</strong>, <strong>"CSS"</strong>, <strong>"JavaScript"</strong>],
+  passion: <strong>"resolver problemas"</strong>
+};
+
+<b>function</b> buildExperience(idea) {
+  <b>return</b> <strong>beautiful</strong>(idea) + <strong>functional</strong>(idea);
+}
+</code></pre>
+
+                <div class="cursor-line">
+                    <span>&rsaquo;</span>
+                    <i></i>
+                </div>
+
+            </div>
+
+            <div class="hero-orbit orbit-one"></div>
+            <div class="hero-orbit orbit-two"></div>
+
+        </header>
+
+        <section class="marquee">
+            <div>
+
+                <span>HTML5</span>
+                <b>✦</b>
+                <span>CSS3</span>
+                <b>✦</b>
+                <span>JAVASCRIPT</span>
+                <b>✦</b>
+                <span>RESPONSIVE DESIGN</span>
+                <b>✦</b>
+                <span>UI / UX</span>
+                <b>✦</b>
+
+                <!-- repeticion -->
+
+                <span>HTML5</span>
+                <b>✦</b>
+                <span>CSS3</span>
+                <b>✦</b>
+                <span>JAVASCRIPT</span>
+                <b>✦</b>
+                <span>RESPONSIVE DESIGN</span>
+                <b>✦</b>
+                <span>UI / UX</span>
+                <b>✦</b>
+
+            </div>
+        </section>
+
+        <section class="section projects" id="proyectos">
+
+            <div class="section-heading">
+
+
+                <h2>
+                    Trabajo que habla<br>
+                    por sí solo.
+                </h2>
+
+                <p>
+                    Una selección de interfaces y experiencias construidas con atención al detalle.
+                </p>
+            </div>
+
+            <div class="mini-projects" aria-label="Proyectos adicionales">
+                <a class="mini-project" href="proyectos/Proyecto-Pc_Versus-main/Proyecto-Pc_Versus-main/pc_versus/index.php" target="_blank" rel="noreferrer">
+                    <span class="mini-tag">Proyecto 01</span>
+                    <strong>PC Versus</strong>
+                    <small>Comparador y e-commerce de equipos</small>
+                </a>
+
+                <a class="mini-project" href="proyectos/proyecto_pixelsuite-main/proyecto_pixelsuite-main/index.html" target="_blank" rel="noreferrer">
+                    <span class="mini-tag">Proyecto 02</span>
+                    <strong>PixelSuite</strong>
+                    <small>Landing page y experiencia visual</small>
+                </a>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card project-featured">
+
+                    <div class="project-art art-dashboard">
+                        <div class="dash-sidebar"></div>
+
+                        <div class="dash-main">
+                            <div class="dash-lines"></div>
+                            <div class="dash-chart"></div>
+
+                            <div class="dash-cards">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-meta">
+
+                        <span>Web app</span>
+                    </div>
+
+                    <h3>Panel de control para negocios</h3>
+
+                    <p>
+                        Una interfaz clara para visualizar datos y tomar decisiones.
+                    </p>
+
+                    <a href="#contacto">
+                        Ver proyecto <span>&nearr;</span>
+                    </a>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-art art-landing">
+                        <div class="browser">
+                            <div class="browser-top"></div>
+                            <div class="landing-nav"></div>
+
+                            <div class="landing-title">
+                                MOVE<br>
+                                <em>FORWARD.</em>
+                            </div>
+
+                            <div class="landing-block"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-meta">
+
+                        <span>Landing page</span>
+                    </div>
+
+                    <h3>Landing page de marca</h3>
+
+                    <a href="#contacto">
+                        Ver proyecto <span>&nearr;</span>
+                    </a>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-art art-mobile">
+
+                        <div class="phone">
+                            <div class="phone-head"></div>
+                            <div class="phone-card"></div>
+
+                            <div class="phone-list">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+
+                        <span class="float-tag">Mobile first</span>
+
+                    </div>
+
+                    <div class="project-meta">
+
+                        <span>Aplicación web</span>
+                    </div>
+
+                    <h3>Organizador de tareas</h3>
+
+                    <a href="#contacto">
+                        Ver proyecto <span>&nearr;</span>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="section about" id="sobre-mi">
+
+            <div class="about-number"></div>
+
+            <div>
+                <p class="eyebrow">Sobre mí</p>
+
+                <h2>
+                    La creatividad también puede tener <em>código.</em>
+                </h2>
+            </div>
+
+            <div class="about-copy">
+                <p>
+                    Vengo del mundo del diseño gráfico, y ahora llevo esa mirada al desarrollo web.
+                    Me interesa crear productos que se vean bien, se sientan naturales y resuelvan
+                    un problema real.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="skills section">
+
+            <p class="eyebrow">Herramientas</p>
+
+            <div class="skills-list">
+
+                <div>
+                    <span>01</span>
+                    <h3>HTML &amp; CSS</h3>
+                    <p>Estructuras sólidas y estilos precisos.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>JavaScript</h3>
+                    <p>Interacciones que dan vida a la web.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>Diseño UI</h3>
+                    <p>Interfaces pensadas para las personas.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+
+        <p class="eyebrow">¿Tienes una idea?</p>
+
+        <h2>
+            Hagamos algo<br>
+            <em>increíble.</em>
+        </h2>
+
+        <a class="footer-email" href="mailto:lidereyesig15@gmail.com">
+            lidereyesig15@gmail.com <span>&nearr;</span>
+        </a>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 David Reyes</span>
+            <a href="index.html">Portafolios &uarr;</a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
